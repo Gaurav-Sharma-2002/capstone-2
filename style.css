@@ -65,7 +65,7 @@ div.intro {
 .resume {
   background-color: #efefef;
   text-align: center;
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
 }
 
@@ -292,7 +292,7 @@ footer a:hover {
   }
 
   #contact {
-    height: 500px;
+    height: 600px;
   }
 
   .contact-p {
