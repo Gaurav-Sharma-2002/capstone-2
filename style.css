@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar  */
+header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  opacity: 85%;
+}
+
+.navbar {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+  margin: auto 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav li a:hover {
+  color: rgb(92, 92, 255);
+}
+
+/* introduction part  */
+div.intro {
+  background-color: #dddddd;
+  text-align: center;
+}
+
+.profile-img {
+  height: 150px;
+}
+
+.intro h1 {
+  padding: 15px;
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+.intro h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+/* resume  */
+.resume {
+  background-color: #efefef;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+}
+
+.resume h1 {
+  padding: 15px;
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+.resume h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: "Pacifico", cursive;
+}
+
+.resume a {
+  color: blue;
+}
+
+.resume a:hover {
+  color: greenyellow;
+}
+
+/* project section  */
+#projects {
+  background-color: #dddddd;
+  text-align: center;
+}
+
+#projects h1 {
+  padding: 15px;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-family: "Pacifico", cursive;
+}
+
+.main-container {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  height: 250px;
+  width: 300px;
+}
+
+.project-text {
+  margin: 10px auto;
+  width: 71%;
+  line-height: 2;
+}
+
+.project-container a:hover {
+  color: greenyellow;
+}
+
+/* start with project section image and text sizing  */
+
+.project-link {
+  color: blue;
+}
+
+/* about & interest section  */
+#about {
+  background-color: #efefef;
+}
+
+.about-heading {
+  text-align: center;
+  padding: 15px;
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+.about-img {
+  height: 170px;
+  margin: 10px 0;
+  /* position: relative; */
+  /* left: 100px; */
+}
+
+.about-grid-container {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-text {
+  margin: 0px auto;
+  width: 71%;
+  line-height: 3;
+}
+
+.interest-h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+
+.interests-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 20px;
+  /* height: 220px; */
+}
+
+.interest-img {
+  height: 150px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* contact section  */
+#contact {
+  background-color: #dddddd;
+  text-align: center;
+  height: 400px;
+}
+
+.contact-h1 {
+  padding: 15px;
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+.contact-h4 {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+.contact-p {
+  padding: 10px;
+  font-size: 1rem;
+  width: 30%;
+  margin: 0 auto;
+  line-height: 3;
+}
+
+.contact a:hover {
+  background-color: greenyellow;
+}
+
+.btn {
+  background-color: #11cdd4;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+/* footer  */
+footer {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  text-align: center;
+  padding: 30px;
+}
+
+footer a {
+  padding: 0 30px;
+  color: blue;
+}
+
+footer p {
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+footer a:hover {
+  color: greenyellow;
+}
+
+/* para  */
+
+.para {
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  nav li {
+    margin: auto 15px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    margin-bottom: 20px;
+  }
+
+  #contact {
+    height: 450px;
+  }
+
+  .main-container {
+    height: 1050px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    display: none;
+  }
+
+  .main-container {
+    height: 1100px;
+  }
+
+  .interests-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-text {
+    margin: -10px auto 20px;
+  }
+
+  #contact {
+    height: 500px;
+  }
+
+  .contact-p {
+    width: 50%;
+  }
+}
